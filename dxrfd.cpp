@@ -416,7 +416,7 @@ static int link_to_ref(char *call)
    if (blocks.find(ref) != blocks.end())
       return -1;
 
-   if ((memcmp(ref, "REF", 3) != 0) && (memcmp(ref, "XRF", 3) != 0))
+   if ((memcmp(ref, "REF", 3) != 0) && (memcmp(ref, "XRF", 3) != 0) && (memcmp(ref, "XLX", 3) != 0))
    {
       traceit("XRF or REF only\n");
       return -1;
